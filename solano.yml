@@ -1,0 +1,11 @@
+ruby_version: 2.2.1
+bundler_version: 1.7.12
+failure_thresholds:
+  - master: 25%
+tests:
+  - /bin/true
+  - sleep 10; /bin/true
+  - sleep 20; /bin/true
+  - /bin/false
+  - sleep 2; /bin/false
+  - sleep 4; /bin/false
